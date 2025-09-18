@@ -1,0 +1,21 @@
+TYPE structOrderControl :
+STRUCT
+	xExecute: 	BIT	;
+	xBit1	:	BIT	;
+	xBit2	:	Bit	;
+	xBit3	:	Bit	;
+	xBit4	:	Bit	;
+	xBit5	:	Bit	;
+	xBit6	:	Bit	;
+	xBit7	:	Bit	;
+	xBit8	:	Bit	;
+	xBit9	:	Bit	;
+	xBit10	:	Bit	;
+	xBit11	:	Bit	;
+	xBit12	:	Bit	;
+	xBit13	:	Bit	;
+	xBit14	:	Bit	;
+	xBit15	:	Bit	;
+
+END_STRUCT
+END_TYPE

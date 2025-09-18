@@ -1,0 +1,12 @@
+TYPE structTrackPositionsMessage :
+STRUCT
+	diKnifePositions : ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF DINT;
+	diFUPositions : ARRAY [0..NUM_OF_CRIMPING_AXIS-1] OF DINT;
+	diFDPositions : ARRAY [0..NUM_OF_CRIMPING_AXIS-1] OF DINT;
+	diBUPositions : ARRAY [0..NUM_OF_CRIMPING_AXIS-1] OF DINT;
+	diBDPositions : ARRAY [0..NUM_OF_CRIMPING_AXIS-1] OF DINT;
+	diSuctionPositions : ARRAY [0..NUM_OF_SUCTION_AXIS-1] OF DINT;
+	diOffsetLRPositions : ARRAY [0..NUM_OF_OFFSET_LR_AXIS-1] OF DINT;
+	diOffsetUDPositions : ARRAY [0..NUM_OF_OFFSET_UD_AXIS-1] OF DINT;
+END_STRUCT
+END_TYPE
