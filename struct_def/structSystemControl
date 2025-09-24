@@ -1,6 +1,6 @@
 TYPE structOrderControl :
 STRUCT
-	xExecute: 	BIT	;
+	xExecute: 	BIT	;//訂單定位執行
 	xBit1	:	BIT	;
 	xBit2	:	Bit	;
 	xBit3	:	Bit	;
