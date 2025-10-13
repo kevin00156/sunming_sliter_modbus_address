@@ -1,12 +1,12 @@
 TYPE structTrackPositionsMessage :
 STRUCT
-	diKnifePositions : ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF DINT;//刀定位位置
-	diFUPositions : ARRAY [0..NUM_OF_CRIMPING_AXIS-1] OF DINT;//前上線定位位置
-	diFDPositions : ARRAY [0..NUM_OF_CRIMPING_AXIS-1] OF DINT;//前下線定位位置
-	diBUPositions : ARRAY [0..NUM_OF_CRIMPING_AXIS-1] OF DINT;//後上線定位位置
-	diBDPositions : ARRAY [0..NUM_OF_CRIMPING_AXIS-1] OF DINT;//後下線定位位置
-	diSuctionPositions : ARRAY [0..NUM_OF_SUCTION_AXIS-1] OF DINT;//吸風左/右定位位置(左0, 右1)
-	diOffsetUDPositions : ARRAY [0..NUM_OF_OFFSET_UD_AXIS-1] OF DINT;//壓線深淺定位位置
-	diOffsetLRPositions : ARRAY [0..NUM_OF_OFFSET_LR_AXIS-1] OF DINT;//機台橫移定位位置
+	diKnifePositions : ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF DINT;//刀定位位置(單位縮放: 1234.56->123456)
+	diFUPositions : ARRAY [0..NUM_OF_CRIMPING_AXIS-1] OF DINT;//前上線定位位置(單位縮放: 1234.56->123456)
+	diFDPositions : ARRAY [0..NUM_OF_CRIMPING_AXIS-1] OF DINT;//前下線定位位置(單位縮放: 1234.56->123456)
+	diBUPositions : ARRAY [0..NUM_OF_CRIMPING_AXIS-1] OF DINT;//後上線定位位置(單位縮放: 1234.56->123456)
+	diBDPositions : ARRAY [0..NUM_OF_CRIMPING_AXIS-1] OF DINT;//後下線定位位置(單位縮放: 1234.56->123456)
+	diSuctionPositions : ARRAY [0..NUM_OF_SUCTION_AXIS-1] OF DINT;//吸風左/右定位位置(左0, 右1)(單位縮放: 1234.56->123456)
+	diOffsetUDPositions : ARRAY [0..NUM_OF_OFFSET_UD_AXIS-1] OF DINT;//壓線深淺定位位置(單位縮放: 1234.56->123456)
+	diOffsetLRPositions : ARRAY [0..NUM_OF_OFFSET_LR_AXIS-1] OF DINT;//機台橫移定位位置(單位縮放: 1234.56->123456)
 END_STRUCT
 END_TYPE
