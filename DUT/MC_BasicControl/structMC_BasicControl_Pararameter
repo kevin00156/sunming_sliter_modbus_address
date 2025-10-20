@@ -1,0 +1,18 @@
+TYPE structMC_BasicControl_Pararameter :
+STRUCT
+	stJogPos							: structMC_BasicControl_MotionPar;
+	stJogNeg							: structMC_BasicControl_MotionPar;
+	stRelative							: structMC_BasicControl_MotionPar;
+	stAbsolute							: structMC_BasicControl_MotionPar;
+	stVelocty							: structMC_BasicControl_MotionPar;
+	lrSetPositionTarget 				: LREAL:=0;//設定位置的目標
+	lrStopDec			 				: LREAL:=100;//正常停止減速度
+	lrImmediatelyStopDec			 	: LREAL:=1000;//立即停止減速度
+	
+	xUseModuleLimitSignal	 			: BIT:=1;//OFF:外部極限訊號 	ON:模組極限訊號
+	xContinuousUpdate			 		: BIT;//當數值更新時立即反應
+	//xUseModuleHomeMode 					: BIT;//OFF:使用自訂回HOME 	ON:使用模組回HOME
+	
+	stHomingPar							: structMC_BasicControl_HomingPar;
+END_STRUCT
+END_TYPE

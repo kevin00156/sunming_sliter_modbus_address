@@ -1,0 +1,23 @@
+TYPE structMMC_TrackGroup_Parameter :
+STRUCT
+	//注意：雖然在結構體裡面定義了16軸的數據大小，但這是因為結構體不能做動態陣列，實際上使用了幾軸還是要根據軸組大小決定
+	//比如刀軸只有7軸，那麼只有lrAryMoveAbsolutePosition[0..6]會有意義，其他的會被忽略，依此類推
+	
+	wAryJogAxisSelect			: ARRAY [0..1] OF WORD;//選擇JOG操作的軸
+	lrAutoVelocity 				: LREAL;//自動操作時使用的速度
+	lrManualVelocity 			: LREAL;//Jog操作時使用的速度
+	lrJogPosBeforeHomeVelocity	: LREAL;//在回Home之前用Jog推到正極限的速度
+	lrAcceleration				: LREAL;//軸組加速度
+	lrDeceleration				: LREAL;//軸組減速度
+	lrMoveRelativeDistance		: LREAL;//設定軸組上的軸使用相對移動時的距離
+	
+	
+	lrAryMoveAbsolutePosition				: ARRAY [0..15] OF LREAL;
+	
+	//回home參數
+	lrAryHomePositionCorrection				: ARRAY [0..15] OF LREAL;//回home後修正位置誤差參數
+	lrAryMoveAbsolutePosition_ParkPos		: ARRAY [0..1, 0..15] OF LREAL;//[0,i]:回home後先推到驅動側的位置, [1,i]:分散的各軸初始位置
+	CommonHomingPars		: structMC_BasicControl_HomingPar;//統一管理回home參數
+	lrSPEAR		: ARRAY [1..10] OF LREAL;
+END_STRUCT
+END_TYPE

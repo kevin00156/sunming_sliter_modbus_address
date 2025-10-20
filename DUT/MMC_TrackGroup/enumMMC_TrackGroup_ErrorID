@@ -1,0 +1,12 @@
+TYPE enumMMC_TrackGroup_ErrorID :
+(
+	NoError								:= 0,
+	HomingFailed						:= 1,
+	AnyAxisOnLimitWhilePositioning		:= 2,
+	AnyAxisNotReady 					:= 10,
+	AnyAxisError						:= 11,
+	iCurrentOperatingAxisHasError 		:= 1000
+	
+	
+);
+END_TYPE

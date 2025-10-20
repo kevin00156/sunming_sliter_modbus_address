@@ -1,0 +1,24 @@
+TYPE structMMC_TackGroup_Output :
+STRUCT
+	xBusy : BIT;//軸組執行工作中
+	xError : BIT;//軸組有錯誤
+	xJogging : BIT;//軸組執行Jog命令中
+	xHomeDone : BIT;//軸組回Home完成
+	xMoveToParkPosDone : BIT;//軸組移動到停車位完成
+	xMoveToAbsPosDone : BIT;
+	xEscapeFromLimitDone : BIT;
+	xBit7 : BIT;
+	xBit8 : BIT;
+	xBit9 : BIT;
+	xBit10 : BIT;
+	xBit11 : BIT;
+	xBit12 : BIT;
+	xBit13 : BIT;
+	xBit14 : BIT;
+	xBit15 : BIT;
+
+	eErrorID				: enumMMC_TrackGroup_ErrorID;
+	
+	
+END_STRUCT
+END_TYPE
