@@ -1,0 +1,44 @@
+TYPE structPCMonitor :
+STRUCT
+	diKnifePositions : ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF DINT;//刀當前位置(單位縮放: 1234.56->123456)
+	{attribute 'hide'}
+	diSpear8 : DINT;
+	diFUPositions : ARRAY [0..NUM_OF_CRIMPING_AXIS-1] OF DINT;//前上線當前位置(單位縮放: 1234.56->123456)
+	diFDPositions : ARRAY [0..NUM_OF_CRIMPING_AXIS-1] OF DINT;//前下線當前位置(單位縮放: 1234.56->123456)
+	{attribute 'hide'}
+	diSpear21 : DINT;
+	{attribute 'hide'}
+	diSpear22 : DINT;
+	
+	diBUPositions : ARRAY [0..NUM_OF_CRIMPING_AXIS-1] OF DINT;//後上線當前位置(單位縮放: 1234.56->123456)
+	diBDPositions : ARRAY [0..NUM_OF_CRIMPING_AXIS-1] OF DINT;//後下線當前位置(單位縮放: 1234.56->123456)
+	{attribute 'hide'}
+	diSpear35 : DINT;
+	{attribute 'hide'}
+	diSpear36 : DINT;
+
+	diLSuctionPosition : DINT;//驅動側吸風當前位置(單位縮放: 1234.56->123456)
+	diRSuctionPosition : DINT;//操作側吸風當前位置(單位縮放: 1234.56->123456)
+	diOffsetUDPosition : DINT;//壓線深淺當前位置(單位縮放: 1234.56->123456)
+	diOffsetUDPosition_2 : DINT;//壓線深淺(外壓線，不過我這邊沒有)當前位置(單位縮放: 1234.56->123456)
+	diPaperSupportPosition : DINT;//刀過橋板位置(暫時沒有)
+	{attribute 'hide'}
+	iSpear42 : INT;
+	{attribute 'hide'}
+	iSpear43 : INT;
+	iMachineSpeed : INT;//車速
+	{attribute 'hide'}
+	iSpear45 : INT;
+	{attribute 'hide'}
+	iSpear46 : INT;
+	iStatus : INT;//狀態，參考Excel
+	{attribute 'hide'}
+	iSpear48 : INT;
+	{attribute 'hide'}
+	iSpear49 : INT;
+	{attribute 'hide'}
+	iSpear50 : INT;
+
+
+END_STRUCT
+END_TYPE

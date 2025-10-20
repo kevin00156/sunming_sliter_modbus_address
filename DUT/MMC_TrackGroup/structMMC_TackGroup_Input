@@ -1,0 +1,23 @@
+TYPE structMMC_TackGroup_Input :
+STRUCT
+	xJogPos : BIT;//軸組正轉
+	xJogNeg : BIT;//軸組反轉
+	xHomeExecute : BIT;//軸組回Home
+	xMoveToParkPosExecute : BIT;//軸組回停車位
+	xMoveToAbsPosExecute : BIT;//軸組執行定位
+	xTryEscapeFromLimit : BIT;//軸組嘗試脫離極限
+	xPause : BIT;//暫停定位
+	xBit7 : BIT;
+	xBit8 : BIT;
+	xBit9 : BIT;
+	xBit10 : BIT;
+	xBit11 : BIT;
+	xBit12 : BIT;
+	xBit13 : BIT;
+	xBit14 : BIT;
+	xBit15 : BIT;
+
+	
+	
+END_STRUCT
+END_TYPE

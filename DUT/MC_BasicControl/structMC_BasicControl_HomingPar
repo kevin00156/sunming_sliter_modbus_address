@@ -1,0 +1,10 @@
+TYPE structMC_BasicControl_HomingPar :
+STRUCT
+	lrUnitToPulseRatio				: LREAL;//單位到pulse的加速度(不要動)
+	lrHoming_Acceleration 			: LREAL;//回Home加速度
+	lrVelocityDuringSearchForZero 	: LREAL;//回Home時尋零速度
+	lrVelocityDuringSearchForSwitch	: LREAL;//回Home時回零速度
+	lrHomingPositionOffset			: LREAL;//回Home位置
+	uiHomingMethod					: UINT;//回Home方法
+END_STRUCT
+END_TYPE

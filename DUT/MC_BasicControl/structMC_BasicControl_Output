@@ -1,0 +1,22 @@
+TYPE structMC_BasicControl_Output :
+STRUCT
+	xError						: BIT;//功能塊錯誤
+	xCommandBusy				: BIT;//任一命令執行中
+	xInVelocity 				: BIT;//速度運行到達目標速度
+	xCommandDone				: BIT;//任一命令完成
+	
+	xPositiveLimitSignal 		: BIT;//正極限訊號
+	xNegativeLimitSignal		: BIT;//反極限訊號
+	xBrakeSignal				: BIT;//剎車訊號(EMS)
+	xOriginSignal				: BIT;//原點訊號
+	xAxisStandStill 			: BIT;//軸停止中
+	xInAcceleration				: BIT;//軸加速中
+	xInDeceleration 			: BIT;//軸減速中
+	
+	xBit11						: BIT;
+	xBit12						: BIT;
+	xBit13						: BIT;
+	xBit14						: BIT;
+	xBit15						: BIT;
+END_STRUCT
+END_TYPE

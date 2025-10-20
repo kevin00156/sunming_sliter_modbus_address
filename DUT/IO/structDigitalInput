@@ -1,0 +1,135 @@
+TYPE structDigitalInput :
+STRUCT
+	xX0_SystemRun					: BIT;	//	(X0)	系統啟動
+	xX1_SystemStop					: BIT;	//	(X1)	系統停止
+	xX2_EMS							: BIT;	//	(X2)	緊急停止
+	xX3_MainMotorStart				: BIT;	//	(X3)	主馬達啟動
+	xX4_MainMotorStop				: BIT;	//	(X4)	主馬達停止
+	xX5_WastePaperSuctionOn			: BIT;	//	(X5)	吸廢機啟動
+	xX6_WastePaperSuctionOff		: BIT;	//	(X6)	吸廢機停止
+	xX7_KnifeUp						: BIT;	//	(X7)	刀上
+	xX8_KnifeDown					: BIT;	//	(X8)	刀下
+	xX9_CrimperUp					: BIT;	//	(X9)	線上
+	xX10_ChangeOrder				: BIT;	//	(X10)	換單
+	xX11_VaccumHoleClose			: BIT;	//	(X11)	吸風口合
+	xX12_VaccumHoleOpen				: BIT;	//	(X12)	吸風口開
+	xX13_PaperPresserMASwitch		: BIT;	//	(X13)	壓紙輪手自動
+	xX14_HydraulicMASwitch			: BIT;	//	(X14)	油壓手自動
+	xX15_LeftVaccumHoleMASwitch		: BIT;	//	(X15)	左吸風口手自動
+	xX16_RightVaccumHoleMASwitch	: BIT;	//	(X20)	右吸風口手自動
+	xX17_LeftMachineOffset			: BIT;	//	(X21)	機台橫移_左
+	xX18_RightMachineOffset			: BIT;	//	(X22)	機台橫移_右
+	xX19_SpeedMASwitch				: BIT;	//	(X23)	車速手自動
+	xX20_KnifeMotorOL				: BIT;	//	(X24)	刀輪馬達過熱
+	xX21_CrimperMotorOL				: BIT;	//	(X25)	線輪馬達過熱
+	xX22_KnifeMotorError			: BIT;	//	(X26)	刀輪異常
+	xX23_CrimperMotorError			: BIT;	//	(X27)	線輪異常
+	xX24_KnifeSharpner1				: BIT;	//	(X28)	磨刀1
+	xX25_KnifeSharpner2				: BIT;	//	(X29)	磨刀2
+	xX26_KnifeSharpner3				: BIT;	//	(X30)	磨刀3
+	xX27_KnifeSharpner4				: BIT;	//	(X31)	磨刀4
+	xX28_KnifeSharpner5				: BIT;	//	(X32)	磨刀5
+	xX29_KnifeSharpner6				: BIT;	//	(X33)	磨刀6
+	xX30_KnifeSharpner7				: BIT;	//	(X34)	磨刀7
+	xX31_					: BIT;	//	(X35)	
+	xX32_					: BIT;	//	(X40)	
+	xX33_					: BIT;	//	(X41)	
+	xX34_					: BIT;	//	(X42)	
+	xX35_					: BIT;	//	(X43)	
+	xX36_					: BIT;	//	(X44)	
+	xX37_					: BIT;	//	(X45)	
+	xX38_					: BIT;	//	(X46)	
+	xX39_					: BIT;	//	(X47)	
+	xX40_					: BIT;	//	(X48)	
+	xX41_					: BIT;	//	(X49)	
+	xX42_					: BIT;	//	(X50)	
+	xX43_					: BIT;	//	(X51)	
+	xX44_					: BIT;	//	(X52)	
+	xX45_					: BIT;	//	(X53)	
+	xX46_					: BIT;	//	(X54)	
+	xX47_					: BIT;	//	(X55)	
+	xX48_					: BIT;	//	(X60)	
+	xX49_					: BIT;	//	(X61)	
+	xX50_					: BIT;	//	(X62)	
+	xX51_					: BIT;	//	(X63)	
+	xX52_					: BIT;	//	(X64)	
+	xX53_					: BIT;	//	(X65)	
+	xX54_					: BIT;	//	(X66)	
+	xX55_					: BIT;	//	(X67)	
+	xX56_					: BIT;	//	(X68)	
+	xX57_					: BIT;	//	(X69)	
+	xX58_					: BIT;	//	(X70)	
+	xX59_					: BIT;	//	(X71)	
+	xX60_					: BIT;	//	(X72)	
+	xX61_					: BIT;	//	(X73)	
+	xX62_					: BIT;	//	(X74)	
+	xX63_					: BIT;	//	(X75)	
+	xX64_					: BIT;	//		
+	xX65_					: BIT;	//		
+	xX66_					: BIT;	//		
+	xX67_					: BIT;	//		
+	xX68_					: BIT;	//		
+	xX69_					: BIT;	//		
+	xX70_					: BIT;	//		
+	xX71_					: BIT;	//		
+	xX72_					: BIT;	//		
+	xX73_					: BIT;	//		
+	xX74_					: BIT;	//		
+	xX75_					: BIT;	//		
+	xX76_					: BIT;	//		
+	xX77_					: BIT;	//		
+	xX78_					: BIT;	//		
+	xX79_					: BIT;	//		
+	xX80_					: BIT;	//		
+	xX81_					: BIT;	//		
+	xX82_					: BIT;	//		
+	xX83_					: BIT;	//		
+	xX84_					: BIT;	//		
+	xX85_					: BIT;	//		
+	xX86_					: BIT;	//		
+	xX87_					: BIT;	//		
+	xX88_					: BIT;	//		
+	xX89_					: BIT;	//		
+	xX90_					: BIT;	//		
+	xX91_					: BIT;	//		
+	xX92_					: BIT;	//		
+	xX93_					: BIT;	//		
+	xX94_					: BIT;	//		
+	xX95_					: BIT;	//		
+	xX96_					: BIT;	//		
+	xX97_					: BIT;	//		
+	xX98_					: BIT;	//		
+	xX99_					: BIT;	//		
+	xX100_					: BIT;	//		
+	xX101_					: BIT;	//		
+	xX102_					: BIT;	//		
+	xX103_					: BIT;	//		
+	xX104_					: BIT;	//		
+	xX105_					: BIT;	//		
+	xX106_					: BIT;	//		
+	xX107_					: BIT;	//		
+	xX108_					: BIT;	//		
+	xX109_					: BIT;	//		
+	xX110_					: BIT;	//		
+	xX111_					: BIT;	//		
+	xX112_					: BIT;	//		
+	xX113_					: BIT;	//		
+	xX114_					: BIT;	//		
+	xX115_					: BIT;	//		
+	xX116_					: BIT;	//		
+	xX117_					: BIT;	//		
+	xX118_					: BIT;	//		
+	xX119_					: BIT;	//		
+	xX120_					: BIT;	//		
+	xX121_					: BIT;	//		
+	xX122_					: BIT;	//		
+	xX123_					: BIT;	//		
+	xX124_					: BIT;	//		
+	xX125_					: BIT;	//		
+	xX126_					: BIT;	//		
+	xX127_					: BIT;	//		
+
+
+
+END_STRUCT
+END_TYPE

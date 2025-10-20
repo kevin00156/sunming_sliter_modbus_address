@@ -1,0 +1,23 @@
+TYPE structMC_BasicControl_Input :
+STRUCT
+	xRegulatorOn 				: BIT;//軸使能
+	xReset 						: BIT;//功能塊RESET
+	xStop 						: BIT;//伺服停止
+	xHome						: BIT;//回Home
+	xJogPositive 				: BIT;//正向JOG
+	xJogNegative 				: BIT;//反向JOG
+	xMoveRelativePosExecute		: BIT;//相對定位開始(正向)
+	xMoveRelativeNegExecute		: BIT;//相對定位開始(反向)
+	xMoveAbsoluteExecute 		: BIT;//絕對定位開始
+	xMoveVelocityExecute 		: BIT;//速度模式開始
+	xSetPosition 				: BIT;//設定位置
+	
+	xPositiveLimitFeedback 		: BIT;//正轉極限(使用外部訊號時,動作時才輸入)
+	xNegativeLimitFeedback 		: BIT;//正轉極限(使用外部訊號時,動作時才輸入)
+	xEMS						: BIT;//緊急停止(使用外部訊號時,動作時才輸入)
+	xOriginSensorFeedback 		: BIT;//原點sensor訊號(使用外部訊號時,動作時才輸入)
+	
+	xBit15						: BIT;
+END_STRUCT
+END_TYPE
+    
