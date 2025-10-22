@@ -1,8 +1,9 @@
 TYPE structOrderControl :
 STRUCT
 	xExecute: 	BIT	;//訂單定位執行
-	xBit1	:	BIT	;
-	xBit2	:	Bit	;
+	xDownKnifeAndCrimper:	Bit	;//下壓刀線
+	xUpKnifeAndCrimper:	Bit	;//抬起刀線
+	xMachineMode:	Bit	; //機台模式選擇, 0: 單機, 1: 雙機
 	xBit3	:	Bit	;
 	xBit4	:	Bit	;
 	xBit5	:	Bit	;
@@ -16,6 +17,9 @@ STRUCT
 	xBit13	:	Bit	;
 	xBit14	:	Bit	;
 	xBit15	:	Bit	;
-
+	
+	wUsedKnife : WORD; //使用刀狀況
+	wUsedFrontCrimper : WORD; //使用前壓線狀況
+	wUsedBackCrimper : WORD; //使用後壓線狀況
 END_STRUCT
 END_TYPE
