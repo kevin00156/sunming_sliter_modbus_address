@@ -3,7 +3,7 @@ STRUCT
 	xBusy	: BIT;//訂單定位執行中
 	xDone	: BIT;//訂單定位執行完成
 	xError	: BIT;//訂單執行時錯誤
-	xInDownKnifeAndCrimper	:	BIT	;//下壓刀線回授
+	xInDownKnifeAndCrimper	:	BIT	;//下壓刀線回授git
 	xInUpKnifeAndCrimper	:	Bit	;//抬起刀線回授
 	xBit5	:	Bit	;
 	xBit6	:	Bit	;
