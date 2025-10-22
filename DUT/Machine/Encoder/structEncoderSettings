@@ -1,0 +1,6 @@
+TYPE structEncoderSettings :
+STRUCT
+	diPulsePerRound : DINT;
+	diUnitPerRound	: DINT;
+END_STRUCT
+END_TYPE
