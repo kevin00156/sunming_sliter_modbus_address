@@ -1,0 +1,7 @@
+TYPE enumActuatorMode :
+(
+	Disable := 0,
+	DistanceMode := 1,
+	TimeMode := 2
+);
+END_TYPE

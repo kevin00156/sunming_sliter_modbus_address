@@ -1,0 +1,18 @@
+TYPE structMachineSettings :
+STRUCT
+	
+	iCorrugateType 						: INT;//楞別(3,5,7層分別輸入數值0,1,2)
+	EncoderSetting						: structEncoderSettings;	//Encoder設定
+	
+	eKnifeGrinderMode 					: enumActuatorMode;//磨刀模式
+	eKnifeBlowerMode 					: enumActuatorMode;//吹氣模式
+	eOilSprayerMode 					: enumActuatorMode;//噴油模式
+	
+	KnifeGrinderSettings 				: ARRAY [0..2, 0..NUM_OF_KNIFE_AXIS-1] OF structActuatorSetting;//磨刀設定(Dim1: 3,5,7層，Dim2: 刀1~9)
+	KnifeBlowerSettings 				: ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF structActuatorSetting;//刀吹風設定
+	OilSprayerSetting					: structActuatorSetting;//噴油設定
+	
+	
+	
+END_STRUCT
+END_TYPE
