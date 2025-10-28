@@ -1,19 +1,30 @@
 TYPE structMachineStates :
 STRUCT
-	KnifeGrinderRecordDistances 		: ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF UDINT;//磨刀距離(到達後Reset, 單位換算123.45(m)->12345)
-	KnifeBlowerRecordDistances 			: ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF UDINT;//吹風距離(到達後Reset, 單位換算123.45(m)->12345)
-	OilSprayerRecordDistances			: UDINT;//噴油距離(到達後Reset, 單位換算123.45(m)->12345)
+	KnifeGrinderRecordDistances 		: ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF UDINT;//磨刀距離(到達後Reset, 單位換算12.345(m)->12345)
+	KnifeBlowerRecordDistances 			: ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF UDINT;//吹風距離(到達後Reset, 單位換算12.345(m)->12345)
+	OilSprayerRecordDistance			: UDINT;//噴油距離(到達後Reset, 單位換算12.345(m)->12345)
 	
-	KnifeGrinderKeepRecordDistances 	: ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF UDINT;//磨刀距離(持續累計到清除為止, 單位換算123.45(m)->12345)
-	KnifeBlowerKeepRecordDistances 		: ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF UDINT;//吹風距離(持續累計到清除為止, 單位換算123.45(m)->12345)
-	OilSprayerKeepRecordDistances		: UDINT;//噴油距離(持續累計到清除為止, 單位換算123.45(m)->12345)
+	KnifeGrinderKeepRecordDistances 	: ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF UDINT;//磨刀距離(持續累計到清除為止, 單位換算12.345(m)->12345)
+	KnifeBlowerKeepRecordDistances 		: ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF UDINT;//吹風距離(持續累計到清除為止, 單位換算12.345(m)->12345)
+	OilSprayerKeepRecordDistance		: UDINT;//噴油距離(持續累計到清除為止, 單位換算12.345(m)->12345)
 	
 	KnifeGrinderRecordTimes 		: ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF UDINT;//磨刀時間(到達後Reset, 單位換算12.345(sec)->12345)
 	KnifeBlowerRecordTimes 			: ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF UDINT;//吹風時間(到達後Reset, 單位換算12.345(sec)->12345)
-	OilSprayerRecordTimes			: UDINT;//噴油時間(到達後Reset, 單位換算12.345(sec)->12345)
+	OilSprayerRecordTime			: UDINT;//噴油時間(到達後Reset, 單位換算12.345(sec)->12345)
 	
 	KnifeGrinderKeepRecordTimes 	: ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF UDINT;//磨刀時間(持續累計到清除為止, 單位換算12.345(sec)->12345)
 	KnifeBlowerKeepRecordTimes 		: ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF UDINT;//吹風時間(持續累計到清除為止, 單位換算12.345(sec)->12345)
-	OilSprayerKeepRecordTimes		: UDINT;//噴油時間(持續累計到清除為止, 單位換算12.345(sec)->12345)
+	OilSprayerKeepRecordTime		: UDINT;//噴油時間(持續累計到清除為止, 單位換算12.345(sec)->12345)
+
+	xAryKnifeGrinderOutput : ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF BOOL;//磨刀輸出
+	xAryKnifeBlowerOutput : ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF BOOL;//吹風輸出
+	xOilSprayerOutput : BOOL;//噴油輸出
+
+	xAryKnifeSV : ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF BOOL;//刀電磁閥狀態
+	xAryFrontCrimperSV : ARRAY [0..NUM_OF_CRIMPING_AXIS-1] OF BOOL;//前線電磁閥狀態
+	xAryBackCrimperSV : ARRAY [0..NUM_OF_CRIMPING_AXIS-1] OF BOOL;//後線電磁閥狀態
+	
+	udiEncoderVelocity	: UDINT;//Encoder速度(單位縮放: 123.456(mm/sec))
+	udiEncoderPosition	: UDINT;//Encoder位置(單位縮放: 123.456(mm)，斷電後清除)
 END_STRUCT
 END_TYPE

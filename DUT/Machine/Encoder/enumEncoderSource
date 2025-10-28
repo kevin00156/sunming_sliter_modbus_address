@@ -1,0 +1,6 @@
+TYPE enumEncoderSource :
+(
+	External := 0,//外部Encoder
+	Virtual := 1 //虛擬Encoder
+);
+END_TYPE

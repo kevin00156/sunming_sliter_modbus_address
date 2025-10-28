@@ -12,6 +12,8 @@ STRUCT
 	KnifeBlowerSettings 				: ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF structActuatorSetting;//刀吹風設定
 	OilSprayerSetting					: structActuatorSetting;//噴油設定
 	
+	eEncoderSource						: enumEncoderSource;//設定Encoder來源
+	udiVirtualEncoderVelocity			: UDINT;//虛擬Encoder的速度設定，(單位縮放: 123.456(mm))
 	
 	
 END_STRUCT
