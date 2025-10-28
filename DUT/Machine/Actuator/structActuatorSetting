@@ -1,8 +1,8 @@
 TYPE structActuatorSetting ://磨刀/噴油/吹氣設定
 STRUCT
 	diOnDistance	: DINT;//間歇距離
-	diKeepDistance	: DINT;//距離
+	diKeepDistance	: DINT;//保持距離
 	diOnTime		: DINT;//間歇時間
-	diKeepTime		: DINT;//時間
+	diKeepTime		: DINT;//保持時間
 END_STRUCT
 END_TYPE

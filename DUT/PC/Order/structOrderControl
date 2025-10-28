@@ -3,9 +3,8 @@ STRUCT
 	xExecute: 	BIT	;//訂單定位執行
 	xDownKnifeAndCrimper:	Bit	;//下壓刀線
 	xUpKnifeAndCrimper:	Bit	;//抬起刀線
-	xMachineMode:	Bit	; //機台模式選擇, 0: 單機, 1: 雙機
-	xBit3	:	Bit	;
-	xBit4	:	Bit	;
+	xMachineMode:	BIT	; //機台模式選擇, 0: 單機, 1: 雙機
+	xChangeOrder	:	BIT	;//電腦命令換單
 	xBit5	:	Bit	;
 	xBit6	:	Bit	;
 	xBit7	:	Bit	;
