@@ -5,7 +5,7 @@ STRUCT
 	xUpKnifeAndCrimper:	Bit	;//抬起刀線
 	xMachineMode:	BIT	; //機台模式選擇, 0: 單機, 1: 雙機
 	xChangeOrder	:	BIT	;//電腦命令換單
-	xBit5	:	Bit	;
+	xSameOrderFlag	:	BIT	;//相同訂單旗標
 	xBit6	:	Bit	;
 	xBit7	:	Bit	;
 	xBit8	:	Bit	;
