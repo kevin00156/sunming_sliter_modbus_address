@@ -6,7 +6,7 @@ STRUCT
 	xInDownKnifeAndCrimper	:	BIT	;//下壓刀線回授
 	xInUpKnifeAndCrimper	:	BIT	;//抬起刀線回授
 	xInChangeOrder	:	BIT	;//換單中
-	xBit6	:	BIT	;
+	xOrderChanged	:	BIT	;//執行換單動作(固定ON住1秒後關閉)
 	xBit7	:	Bit	;
 	xBit8	:	Bit	;
 	xBit9	:	Bit	;
