@@ -1,19 +1,19 @@
 TYPE structMachineStates :
 STRUCT
 	KnifeGrinderRecordDistances 		: ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF UDINT;//磨刀距離(到達後Reset, 單位換算123.45(m)->12345)
-	KnifeBlowerRecordDistances 			: ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF UDINT;//磨前線距離(到達後Reset, 單位換算123.45(m)->12345)
+	KnifeBlowerRecordDistances 			: ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF UDINT;//吹風距離(到達後Reset, 單位換算123.45(m)->12345)
 	OilSprayerRecordDistances			: UDINT;//噴油距離(到達後Reset, 單位換算123.45(m)->12345)
 	
 	KnifeGrinderRecordKeepDistances 	: ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF UDINT;//磨刀距離(持續累計到清除為止, 單位換算123.45(m)->12345)
-	KnifeBlowerKeepRecordDistances 		: ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF UDINT;//磨前線距離(持續累計到清除為止, 單位換算123.45(m)->12345)
+	KnifeBlowerKeepRecordDistances 		: ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF UDINT;//吹風距離(持續累計到清除為止, 單位換算123.45(m)->12345)
 	OilSprayerKeepRecordDistances		: UDINT;//噴油距離(持續累計到清除為止, 單位換算123.45(m)->12345)
 	
 	KnifeGrinderRecordTimes 		: ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF UDINT;//磨刀時間(到達後Reset, 單位換算12.345(sec)->12345)
-	KnifeBlowerRecordTimes 			: ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF UDINT;//磨前線時間(到達後Reset, 單位換算12.345(sec)->12345)
+	KnifeBlowerRecordTimes 			: ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF UDINT;//吹風時間(到達後Reset, 單位換算12.345(sec)->12345)
 	OilSprayerRecordTimes			: UDINT;//噴油時間(到達後Reset, 單位換算12.345(sec)->12345)
 	
 	KnifeGrinderRecordKeepTimes 	: ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF UDINT;//磨刀時間(持續累計到清除為止, 單位換算12.345(sec)->12345)
-	KnifeBlowerKeepRecordTimes 		: ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF UDINT;//磨前線時間(持續累計到清除為止, 單位換算12.345(sec)->12345)
+	KnifeBlowerKeepRecordTimes 		: ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF UDINT;//吹風時間(持續累計到清除為止, 單位換算12.345(sec)->12345)
 	OilSprayerKeepRecordTimes		: UDINT;//噴油時間(持續累計到清除為止, 單位換算12.345(sec)->12345)
 END_STRUCT
 END_TYPE
