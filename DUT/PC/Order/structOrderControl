@@ -4,7 +4,6 @@ STRUCT
 	xDownKnifeAndCrimper:	Bit	;//下壓刀線
 	xUpKnifeAndCrimper:	Bit	;//抬起刀線
 	xMachineMode:	Bit	; //機台模式選擇, 0: 單機, 1: 雙機
-	xBit3	:	Bit	;
 	xBit4	:	Bit	;
 	xBit5	:	Bit	;
 	xBit6	:	Bit	;
