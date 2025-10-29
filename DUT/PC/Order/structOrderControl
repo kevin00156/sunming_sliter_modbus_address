@@ -1,13 +1,13 @@
 TYPE structOrderControl :
 STRUCT
-	xExecute: 	BIT	;//訂單定位執行
+	xOrderExecute: 	BIT	;//訂單定位執行
 	xDownKnifeAndCrimper:	Bit	;//下壓刀線
 	xUpKnifeAndCrimper:	Bit	;//抬起刀線
 	xMachineMode:	BIT	; //機台模式選擇, 0: 單機, 1: 雙機
 	xChangeOrder	:	BIT	;//電腦命令換單
 	xSameOrderFlag	:	BIT	;//相同訂單旗標
-	xBit6	:	Bit	;
-	xBit7	:	Bit	;
+	xHomeExecute	:	Bit	;//執行回Home命令
+	xHasNextOrder	:	Bit	;//PC端有下一筆訂單
 	xBit8	:	Bit	;
 	xBit9	:	Bit	;
 	xBit10	:	Bit	;
