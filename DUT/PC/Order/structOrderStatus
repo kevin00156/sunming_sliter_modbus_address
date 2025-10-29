@@ -1,12 +1,12 @@
 TYPE structOrderStatus :
 STRUCT
-	xBusy	: BIT;//訂單定位執行中
-	xDone	: BIT;//訂單定位執行完成
-	xError	: BIT;//訂單執行時錯誤
-	xInDownKnifeAndCrimper	:	BIT	;//下壓刀線回授
-	xInUpKnifeAndCrimper	:	BIT	;//抬起刀線回授
-	xInChangeOrder	:	BIT	;//換單中
+	xInDownKnifeAndCrimper	:	BIT	;//下壓刀線回授(要全部下起才算)
+	xInUpKnifeAndCrimper	:	BIT	;//抬起刀線回授(要全部抬起才算)
 	xOrderChanged	:	BIT	;//執行換單動作(固定ON住1秒後關閉)
+	xBit3	:	BIT	;
+	xBit4	:	BIT	;
+	xBit5	:	BIT	;
+	xBit6	:	BIT	;
 	xBit7	:	Bit	;
 	xBit8	:	Bit	;
 	xBit9	:	Bit	;
@@ -17,5 +17,7 @@ STRUCT
 	xBit14	:	Bit	;
 	xBit15	:	Bit	;
 
+	eProcessStatus	: enumOrderProcess_Status;
+	eProcessErrorID : enumOrderProcess_ErrorID;
 END_STRUCT
 END_TYPE

@@ -1,0 +1,7 @@
+TYPE enumOrderProcess_ErrorID :
+(
+	NoError								:= 0,
+	HomingError							:= 1,//回Home錯誤
+	OrderExecutionError					:= 2//排單時錯誤
+);
+END_TYPE
