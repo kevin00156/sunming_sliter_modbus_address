@@ -26,5 +26,7 @@ STRUCT
 	
 	udiEncoderVelocity	: UDINT;//Encoder速度(單位縮放: 123.456(mm/sec))
 	udiEncoderPosition	: UDINT;//Encoder位置(單位縮放: 123.456(mm)，斷電後清除)
+	
+	udiAryAnalogOutputs : ARRAY [1..NUM_OF_ANALOG_OUTPUT] OF UDINT;//Analog輸出(單位縮放: 123.456(M/min)->123456) CN1: 刀輪， CN2: 線輪，其他SPEAR
 END_STRUCT
 END_TYPE
