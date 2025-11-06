@@ -1,0 +1,6 @@
+TYPE structAnalogOutput :
+STRUCT
+	DataWithUnit : ARRAY [1..NUM_OF_ANALOG_OUTPUT] OF UDINT;//Analog輸出(單位縮放: 123.456(M/min)->123456)
+	Data : ARRAY [1..NUM_OF_ANALOG_OUTPUT] OF UINT;//Analog輸出(單位縮放: 0~10(Voltage) -> 0~65535)
+END_STRUCT
+END_TYPE

@@ -1,0 +1,7 @@
+TYPE structAnalogOutputChannelSetting :
+STRUCT
+	//線性Scale用的參數
+	X : UDINT;
+	Y : UDINT;
+END_STRUCT
+END_TYPE
