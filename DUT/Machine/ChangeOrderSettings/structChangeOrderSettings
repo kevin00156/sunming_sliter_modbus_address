@@ -1,0 +1,15 @@
+TYPE structChangeOrderSettings :
+STRUCT
+	eMode : enumChangeOrderMode;
+	
+	DistanceDelay_On : structChangeOrderSetting_DelaySettings;//下刀線時距離延遲(單位縮放123.456(M)->123456)
+	TimeDelay_On : structChangeOrderSetting_DelaySettings;//下刀線時間延遲(單位縮放123.456(Sec)->123456)
+	CompensationDelay_On : structChangeOrderSetting_DelaySettings;//汽缸下/馬達停止補償時間(單位縮放123.456(Sec)->123456)
+	
+	DistanceDelay_Off : structChangeOrderSetting_DelaySettings;//上刀線時距離延遲(單位縮放123.456(M)->123456)
+	TimeDelay_Off : structChangeOrderSetting_DelaySettings;//上刀線時間延遲(單位縮放123.456(Sec)->123456)
+	CompensationDelay_Off : structChangeOrderSetting_DelaySettings;//汽缸上/馬達啟動補償時間(單位縮放123.456(Sec)->123456)
+	
+	
+END_STRUCT
+END_TYPE

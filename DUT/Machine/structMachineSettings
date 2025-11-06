@@ -15,7 +15,8 @@ STRUCT
 	eEncoderSource						: enumEncoderSource;//設定Encoder來源
 	udiVirtualEncoderVelocity			: UDINT;//虛擬Encoder的速度設定，(單位縮放: 123.456(mm))
 	
-	AnalogOutputSettings 				:  structAnalogOutputSettings;
+	AnalogOutputSettings 				:  structAnalogOutputSettings;//Analog Output相關設定
 	
+	ChangeOrderSettings 				: structChangeOrderSettings;//換單設定
 END_STRUCT
 END_TYPE

@@ -1,0 +1,8 @@
+TYPE structChangeOrderSetting_DelaySettings :
+STRUCT
+	diKnife : DINT;
+	diFrontCrimper : DINT;
+	diBackCrimper : DINT;
+	diMainMotor : DINT;
+END_STRUCT
+END_TYPE
