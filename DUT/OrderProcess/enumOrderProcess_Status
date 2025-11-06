@@ -9,8 +9,9 @@ TYPE enumOrderProcess_Status :
 	WaitForSupportServoMoving			:= 202,//等待輔助軸組(吸風、壓線)到達(暫時要求跳過此流程)
 	WaitForCloseOrderExecute			:= 203,//等待OrderExectue命令被關閉
 	WaitForDownKnifeAndCrimper			:= 210,//等待下刀線
-	OrderInExecution					:= 211,//訂單執行中
-	InChangeOrder						:= 212,//換單中
+	DownKnifeAndCrimperExecution		:= 211,//下刀線中
+	OrderInExecution					:= 212,//訂單執行中
+	InChangeOrder						:= 213,//換單中
 	OrderChanged						:= 220,//換單完成
 	Error								:= 9999//錯誤
 );

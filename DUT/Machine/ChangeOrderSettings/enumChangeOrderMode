@@ -1,0 +1,7 @@
+TYPE enumChangeOrderMode :
+(
+	Immediately := 0,	//立即上下刀/線/開關馬達
+	DistanceMode:= 1,	//根據距離決定
+	TimeMode	:= 2	//根據時間決定
+);
+END_TYPE

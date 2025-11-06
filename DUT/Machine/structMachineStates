@@ -23,8 +23,11 @@ STRUCT
 	xAryKnifeSV : ARRAY [0..NUM_OF_KNIFE_AXIS-1] OF BOOL;//刀電磁閥狀態
 	xAryFrontCrimperSV : ARRAY [0..NUM_OF_CRIMPING_AXIS-1] OF BOOL;//前線電磁閥狀態
 	xAryBackCrimperSV : ARRAY [0..NUM_OF_CRIMPING_AXIS-1] OF BOOL;//後線電磁閥狀態
+	xMainMotor : BOOL;//主馬達狀態
 	
 	udiEncoderVelocity	: UDINT;//Encoder速度(單位縮放: 123.456(mm/sec))
 	udiEncoderPosition	: UDINT;//Encoder位置(單位縮放: 123.456(mm)，斷電後清除)
+	
+	udiAryAnalogOutputs : ARRAY [1..NUM_OF_ANALOG_OUTPUT] OF UDINT;//Analog輸出(單位縮放: 123.456(M/min)->123456)
 END_STRUCT
 END_TYPE
