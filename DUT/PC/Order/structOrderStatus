@@ -3,7 +3,7 @@ STRUCT
 	xInDownKnifeAndCrimper	:	BIT	;//下壓刀線回授(要全部下起才算)
 	xInUpKnifeAndCrimper	:	BIT	;//抬起刀線回授(要全部抬起才算)
 	xOrderChanged	:	BIT	;//執行換單動作(固定ON住1秒後關閉)
-	xBit3	:	BIT	;
+	xAllowTriggerOrderExecute	:	BIT	;//允許排單旗標
 	xBit4	:	BIT	;
 	xBit5	:	BIT	;
 	xBit6	:	BIT	;
