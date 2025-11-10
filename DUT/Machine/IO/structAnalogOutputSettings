@@ -1,0 +1,8 @@
+TYPE structAnalogOutputSettings :
+STRUCT
+	diMachineSpeedToDigitalRatio : UDINT;// 32767:最大車速 比值 (單位縮放: 123.456 -> 123456)
+	ChannelSettings : ARRAY [1..NUM_OF_ANALOG_OUTPUT,0..NUM_OF_ANALOG_OUTPUT_PROFILE] OF structAnalogOutputChannelSetting;//Dim1: Channel 1~4, Dim2: 線性Scale Profiles
+	
+	
+END_STRUCT
+END_TYPE
