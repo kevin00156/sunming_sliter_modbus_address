@@ -1,6 +1,6 @@
 IF pAryErrorHandler<>0 THEN		//DO NOT modify this code, you should generate in Excel!					
 	FOR i:=TO_UINT(LOWER_BOUND(pAryErrorHandler^,1)) TO TO_UINT(UPPER_BOUND(pAryErrorHandler^,1)) DO						
-		BIT_AS_WORD(	//這段FOR是拿來把PLC的BOOL陣列轉成WORD用的				
+		fbBIT_AS_WORD(	//這段FOR是拿來把PLC的BOOL陣列轉成WORD用的				
 			B00	:=	xAryErrorHandler[i*16+0],		
 			B01	:=	xAryErrorHandler[i*16+1],		
 			B02	:=	xAryErrorHandler[i*16+2],		
@@ -52,8 +52,8 @@ IF pAryErrorHandler<>0 THEN		//DO NOT modify this code, you should generate in E
 	xAryErrorHandler	[30]	:=	pAryMC_BasicControl[31]^.Output.xPositiveLimitSignal	;	//	#31 後下線6 正極限
 	xAryErrorHandler	[31]	:=	pAryMC_BasicControl[32]^.Output.xPositiveLimitSignal	;	//	#32 驅動側吸風 正極限
 	xAryErrorHandler	[32]	:=	pAryMC_BasicControl[33]^.Output.xPositiveLimitSignal	;	//	#33 操作側吸風 正極限
-	xAryErrorHandler	[33]	:=	pAryMC_BasicControl[34]^.Output.xPositiveLimitSignal	;	//	#34 機台橫移 正極限
-	xAryErrorHandler	[34]	:=	pAryMC_BasicControl[35]^.Output.xPositiveLimitSignal	;	//	#35 壓線深淺 正極限
+	xAryErrorHandler	[33]	:=	pAryMC_BasicControl[34]^.Output.xPositiveLimitSignal	;	//	#34 壓線深淺 正極限
+	xAryErrorHandler	[34]	:=	pAryMC_BasicControl[35]^.Output.xPositiveLimitSignal	;	//	#35 機台橫移 正極限
 	xAryErrorHandler	[35]	:=	pAryMC_BasicControl[36]^.Output.xPositiveLimitSignal	;	//	#36 測試軸1 正極限
 	xAryErrorHandler	[36]	:=	pAryMC_BasicControl[37]^.Output.xPositiveLimitSignal	;	//	#37 測試軸2 正極限
 	xAryErrorHandler	[37]	:=	pAryMC_BasicControl[38]^.Output.xPositiveLimitSignal	;	//	#38 測試軸3 正極限
@@ -90,8 +90,8 @@ IF pAryErrorHandler<>0 THEN		//DO NOT modify this code, you should generate in E
 	xAryErrorHandler	[68]	:=	pAryMC_BasicControl[31]^.Output.xNegativeLimitSignal	;	//	#31 後下線6 負極限
 	xAryErrorHandler	[69]	:=	pAryMC_BasicControl[32]^.Output.xNegativeLimitSignal	;	//	#32 驅動側吸風 負極限
 	xAryErrorHandler	[70]	:=	pAryMC_BasicControl[33]^.Output.xNegativeLimitSignal	;	//	#33 操作側吸風 負極限
-	xAryErrorHandler	[71]	:=	pAryMC_BasicControl[34]^.Output.xNegativeLimitSignal	;	//	#34 機台橫移 負極限
-	xAryErrorHandler	[72]	:=	pAryMC_BasicControl[35]^.Output.xNegativeLimitSignal	;	//	#35 壓線深淺 負極限
+	xAryErrorHandler	[71]	:=	pAryMC_BasicControl[34]^.Output.xNegativeLimitSignal	;	//	#34 壓線深淺 負極限
+	xAryErrorHandler	[72]	:=	pAryMC_BasicControl[35]^.Output.xNegativeLimitSignal	;	//	#35 機台橫移 負極限
 	xAryErrorHandler	[73]	:=	pAryMC_BasicControl[36]^.Output.xNegativeLimitSignal	;	//	#36 測試軸1 負極限
 	xAryErrorHandler	[74]	:=	pAryMC_BasicControl[37]^.Output.xNegativeLimitSignal	;	//	#37 測試軸2 負極限
 	xAryErrorHandler	[75]	:=	pAryMC_BasicControl[38]^.Output.xNegativeLimitSignal	;	//	#38 測試軸3 負極限
@@ -128,8 +128,8 @@ IF pAryErrorHandler<>0 THEN		//DO NOT modify this code, you should generate in E
 	xAryErrorHandler	[106]	:=	pAryMC_BasicControl[31]^.Output.xError	;	//	#31 後下線6 錯誤
 	xAryErrorHandler	[107]	:=	pAryMC_BasicControl[32]^.Output.xError	;	//	#32 驅動側吸風 錯誤
 	xAryErrorHandler	[108]	:=	pAryMC_BasicControl[33]^.Output.xError	;	//	#33 操作側吸風 錯誤
-	xAryErrorHandler	[109]	:=	pAryMC_BasicControl[34]^.Output.xError	;	//	#34 機台橫移 錯誤
-	xAryErrorHandler	[110]	:=	pAryMC_BasicControl[35]^.Output.xError	;	//	#35 壓線深淺 錯誤
+	xAryErrorHandler	[109]	:=	pAryMC_BasicControl[34]^.Output.xError	;	//	#34 壓線深淺 錯誤
+	xAryErrorHandler	[110]	:=	pAryMC_BasicControl[35]^.Output.xError	;	//	#35 機台橫移 錯誤
 	xAryErrorHandler	[111]	:=	pAryMC_BasicControl[36]^.Output.xError	;	//	#36 測試軸1 錯誤
 	xAryErrorHandler	[112]	:=	pAryMC_BasicControl[37]^.Output.xError	;	//	#37 測試軸2 錯誤
 	xAryErrorHandler	[113]	:=	pAryMC_BasicControl[38]^.Output.xError	;	//	#38 測試軸3 錯誤
@@ -173,10 +173,10 @@ IF pAryErrorHandler<>0 THEN		//DO NOT modify this code, you should generate in E
 	xAryErrorHandler	[151]	:=	NOT pAryControlAxis[31]^.bCommunication	;	//	#31 後下線6 斷線
 	xAryErrorHandler	[152]	:=	NOT pAryControlAxis[32]^.bCommunication	;	//	#32 驅動側吸風 斷線
 	xAryErrorHandler	[153]	:=	NOT pAryControlAxis[33]^.bCommunication	;	//	#33 操作側吸風 斷線
-	xAryErrorHandler	[154]	:=	NOT pAryControlAxis[34]^.bCommunication	;	//	#34 機台橫移 斷線
-	xAryErrorHandler	[155]	:=	NOT pAryControlAxis[35]^.bCommunication	;	//	#35 壓線深淺 斷線
-//	xAryErrorHandler	[156]	:=		;	//	SPEAR157
-//	xAryErrorHandler	[157]	:=		;	//	SPEAR158
+	xAryErrorHandler	[154]	:=	NOT pAryControlAxis[34]^.bCommunication	;	//	#34 壓線深淺 斷線
+	xAryErrorHandler	[155]	:=	NOT pAryControlAxis[35]^.bCommunication	;	//	#35 機台橫移 斷線
+	xAryErrorHandler	[156]	:=	pOrderStatus^.eProcessErrorID = enumOrderProcess_ErrorID.HomingError	;	//	系統回Home時錯誤
+	xAryErrorHandler	[157]	:=	pOrderStatus^.eProcessErrorID = enumOrderProcess_ErrorID.OrderExecutionError	;	//	訂單執行時錯誤
 //	xAryErrorHandler	[158]	:=		;	//	SPEAR159
 //	xAryErrorHandler	[159]	:=		;	//	SPEAR160
 //	xAryErrorHandler	[160]	:=		;	//	SPEAR161
