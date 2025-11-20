@@ -8,7 +8,7 @@ STRUCT
 	xSameOrderFlag	:	BIT	;//相同訂單旗標
 	xHomeExecute	:	Bit	;//執行回Home命令
 	xHasNextOrder	:	Bit	;//PC端有下一筆訂單
-	xBit8	:	Bit	;
+	xDownKnifeAndCrimperAfterExecution	:	Bit	;//排單完成後自動下刀
 	xBit9	:	Bit	;
 	xBit10	:	Bit	;
 	xBit11	:	Bit	;
